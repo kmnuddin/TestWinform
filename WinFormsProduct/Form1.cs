@@ -32,6 +32,8 @@ namespace WinFormsProduct
             };
             _db.Customers.Add(customer);
             _db.SaveChanges();
+
+            Console.WriteLine("Customer added: " + customer.Name);
         }
     }
 }
